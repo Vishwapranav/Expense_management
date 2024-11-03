@@ -1,0 +1,33 @@
+.analytics-card {
+    background: linear-gradient(135deg, #1f1c2c, #928DAB);
+    border-radius: 15px;
+    color: white;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s;
+  }
+  
+  .analytics-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .card-header {
+    font-size: 1.25rem;
+    font-weight: bold;
+    padding: 10px;
+    background-color: #333;
+    border-radius: 15px 15px 0 0;
+  }
+  
+  .card-title {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+  }
+  
+  .income {
+    color: #4caf50; /* Green for income */
+  }
+  
+  .expense {
+    color: #f44336; /* Red for expense */
+  }
+  

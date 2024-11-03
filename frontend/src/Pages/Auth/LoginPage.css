@@ -1,0 +1,109 @@
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .login-page-wrapper {
+    position: relative;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #ffcc00, #ff0066);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .login-container {
+    z-index: 2;
+  }
+  
+  .form-box {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4);
+    animation: float 4s ease-in-out infinite;
+  }
+  
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+  
+  .icon-glow {
+    animation: glow 1.5s infinite;
+  }
+  
+  @keyframes glow {
+    0% {
+      text-shadow: 0 0 10px #ff6600, 0 0 20px #ff6600;
+    }
+    100% {
+      text-shadow: 0 0 20px #ff9900, 0 0 30px #ffcc00;
+    }
+  }
+  
+  .login-title {
+    font-size: 36px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 20px;
+  }
+  
+  .input-label {
+    color: #ffcc00;
+    font-weight: 500;
+  }
+  
+  .input-field {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid #ffcc00;
+    border-radius: 5px;
+    color: #fff;
+    transition: box-shadow 0.3s;
+  }
+  
+  .input-field:focus {
+    box-shadow: 0 0 10px rgba(255, 204, 0, 0.7);
+    outline: none;
+  }
+  
+  .login-btn {
+    background: linear-gradient(135deg, #ff0066, #ffcc00);
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    border-radius: 5px;
+    transition: transform 0.3s, background 0.3s;
+  }
+  
+  .login-btn:hover {
+    transform: scale(1.05);
+    background: linear-gradient(135deg, #ffcc00, #ff0066);
+  }
+  
+  .form-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .forgot-link, .register-link {
+    color: #ffcc00;
+    transition: color 0.3s;
+  }
+  
+  .forgot-link:hover, .register-link:hover {
+    color: #fff;
+  }
+  
+  .account-text {
+    color: #9d9494;
+  }
+  
